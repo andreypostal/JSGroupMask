@@ -3,7 +3,7 @@ Group of masks for input, with different number patterns.
 
 Crie máscaras dinâmicas para os seus inputs de texto, como CPF e CNPJ, telefones fixos e celulares, etc.
 
-# Como usar
+## Como usar
 
 * Importe o arquivo **mascara.js**
 

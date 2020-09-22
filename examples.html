@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="mascara.js"></script>
+    <script src="mask.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
@@ -10,14 +10,26 @@
   </head>
   <body>
     <input type="text" id="cpf-cnpj" />
+    <input type="text" id="phone" />
+
     <script>
-      let masc = new Mascara("cpf-cnpj", [
+      let mask_cpf_cnpj = new Mask("cpf-cnpj", [
         "__.___.___/____-__",
         "___.___.___-__",
       ]);
 
       $("#cpf-cnpj").keyup(function () {
-        masc.update();
+        mask_cpf_cnpj.update();
+      });
+
+      let mask_phone = new Mask("phone", [
+        "+__ (__) ____-____",
+        "+__ (__) _____-____",
+        "+___ (__) _____-____",
+      ]);
+
+      $("#phone").keyup(function () {
+        mask_phone.update();
       });
     </script>
   </body>

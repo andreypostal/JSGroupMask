@@ -1,19 +1,24 @@
 # JSGroupMask
+
 Group of masks for input, with different number patterns.
 
 Crie máscaras dinâmicas para os seus inputs de texto, como CPF e CNPJ, telefones fixos e celulares, etc.
 
 ## Como usar
 
-* Importe o arquivo **mask.js**
+- Import the file **mask.js**
+- Importe o arquivo **mask.js**
 
-* Crie o input que receberá a máscara
+- Create the input that will receive the mask
+- Crie o input que receberá a máscara
+
 ```html
-<input type="text" id="cpf-cnpj" />
-<input type="text" id="phone" />
+<input type="text" id="cpf-cnpj" /> <input type="text" id="phone" />
 ```
 
-* Instancie a máscara a ele, passando como parâmetro seu ID e um array contendo as máscaras.
+- Instantiate the mask to it, having as parameters the ID and an array with the masks
+- Instancie a máscara a ele, passando como parâmetro seu ID e um array contendo as máscaras.
+
 ```javascript
 let mask_cpf_cnpj = new Mask("cpf-cnpj", [
   "__.___.___/____-__",
@@ -26,14 +31,21 @@ let mask_phone = new Mask("phone", [
   "+___ (__) _____-____",
 ]);
 ```
-Os caracteres **_** serão os espaços preenchidos por números. Demais caracteres serão considerados separadores.
 
-* Chame o método update sempre que quiser aplicar a máscara no valor atual do input.
+The char **\_** will be the space filled by numbers. Other characters (except for numbers) will be considered separators.
+Os caracteres **\_** serão os espaços preenchidos por números. Demais caracteres (exceto números) serão considerados separadores.
+
+- Call the method **update** whenever you want to apply the mask to the current value of the input
+- Chame o método **update** sempre que quiser aplicar a máscara no valor atual do input.
+
 ```javascript
 mask_cpf_cnpj.update();
 mask_phone.update();
 ```
+
+As in the example, applying the method to every key pressed, we can use the following code:
 Como no exemplo, aplicando o método para todo char inserido, podemos usar o trecho de código:
+
 ```javascript
 $("#cpf-cnpj").keyup(function () {
   masc.update();
@@ -44,4 +56,5 @@ $("#phone").keyup(function () {
 });
 ```
 
-*Versão desenvolvida rapidamente, contém alguns bugs, eu sei* 
+_Version developted really quickly, it is really simples, has some bugs, but does the job_
+_Versão desenvolvida rapidamente, é muito simples, tem alguns bugs, mas faz o que precisa_

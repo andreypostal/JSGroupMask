@@ -9,15 +9,15 @@ Crie máscaras dinâmicas para os seus inputs de texto, como CPF e CNPJ, telefon
 - Import the file **mask.js**<br>
   Importe o arquivo **mask.js**
 
-- Create the input that will receive the mask
+- Create the input that will receive the mask<br>
   <small>Crie o input que receberá a máscara</small>
 
 ```html
 <input type="text" id="cpf-cnpj" /> <input type="text" id="phone" />
 ```
 
-- Instantiate the mask to it, having as parameters the ID and an array with the masks
-- Instancie a máscara a ele, passando como parâmetro seu ID e um array contendo as máscaras.
+- Instantiate the mask to it, having as parameters the ID and an array with the masks<br>
+  Instancie a máscara a ele, passando como parâmetro seu ID e um array contendo as máscaras.
 
 ```javascript
 let mask_cpf_cnpj = new Mask("cpf-cnpj", [

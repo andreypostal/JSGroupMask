@@ -13,7 +13,8 @@ Crie máscaras dinâmicas para os seus inputs de texto, como CPF e CNPJ, telefon
   <small>Crie o input que receberá a máscara</small>
 
 ```html
-<input type="text" id="cpf-cnpj" /> <input type="text" id="phone" />
+<input type="text" id="cpf-cnpj" />
+<input type="text" id="phone" />
 ```
 
 - Instantiate the mask to it, having as parameters the ID and an array with the masks<br>
@@ -48,7 +49,7 @@ Como no exemplo, aplicando o método para todo char inserido, podemos usar o tre
 
 ```javascript
 $("#cpf-cnpj").keyup(function () {
-  masc.update();
+  mask_cpf_cnpj.update();
 });
 
 $("#phone").keyup(function () {

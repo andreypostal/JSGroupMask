@@ -7,10 +7,10 @@ Crie máscaras dinâmicas para os seus inputs de texto, como CPF e CNPJ, telefon
 ## Como usar
 
 - Import the file **mask.js**
-- Importe o arquivo **mask.js**
+  Importe o arquivo **mask.js**
 
 - Create the input that will receive the mask
-- Crie o input que receberá a máscara
+  <small>Crie o input que receberá a máscara</small>
 
 ```html
 <input type="text" id="cpf-cnpj" /> <input type="text" id="phone" />

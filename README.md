@@ -32,18 +32,18 @@ let mask_phone = new Mask("phone", [
 ]);
 ```
 
-The char **\_** will be the space filled by numbers. Other characters (except for numbers) will be considered separators.
+The char **\_** will be the space filled by numbers. Other characters (except for numbers) will be considered separators.<br>
 Os caracteres **\_** serão os espaços preenchidos por números. Demais caracteres (exceto números) serão considerados separadores.
 
-- Call the method **update** whenever you want to apply the mask to the current value of the input
-- Chame o método **update** sempre que quiser aplicar a máscara no valor atual do input.
+- Call the method **update** whenever you want to apply the mask to the current value of the input<br>
+  Chame o método **update** sempre que quiser aplicar a máscara no valor atual do input.
 
 ```javascript
 mask_cpf_cnpj.update();
 mask_phone.update();
 ```
 
-As in the example, applying the method to every key pressed, we can use the following code:
+As in the example, applying the method to every key pressed, we can use the following code:<br>
 Como no exemplo, aplicando o método para todo char inserido, podemos usar o trecho de código:
 
 ```javascript
@@ -56,5 +56,5 @@ $("#phone").keyup(function () {
 });
 ```
 
-_Version developted really quickly, it is really simples, has some bugs, but does the job_
+_Version developted really quickly, it is really simples, has some bugs, but does the job_<br>
 _Versão desenvolvida rapidamente, é muito simples, tem alguns bugs, mas faz o que precisa_
